@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Program Enrollment</title>
+    <title>Donate Now</title>
     <style>
         * {
             margin: 0;
@@ -154,7 +154,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>New Program Enrollment</h1>
+            <h1>Donate Now</h1>
         </div>
         
         <div class="form-content">
@@ -165,31 +165,31 @@
                 <!-- Personal Information -->
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="salutation">Salutation</label>
-                        <select id="salutation" name="salutation">
+                        <label>Salutation</label>
+                        <select name="salutation">
                             <option value="">--None--</option>
-                            <option value="Mr.">Mr.</option>
-                            <option value="Ms.">Ms.</option>
-                            <option value="Mrs.">Mrs.</option>
-                            <option value="Dr.">Dr.</option>
-                            <option value="Prof.">Prof.</option>
-                            <option value="Mx.">Mx.</option>
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                            <option>Dr.</option>
+                            <option>Prof.</option>
+                            <option>Mx.</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="first_name">First Name</label>
-                        <input id="first_name" maxlength="40" name="first_name" type="text" placeholder="Enter first name">
+                        <label>First Name</label>
+                        <input type="text" name="first_name" placeholder="Enter first name">
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="last_name">Last Name</label>
-                        <input id="last_name" maxlength="80" name="last_name" type="text" placeholder="Enter last name">
+                        <label>Last Name</label>
+                        <input type="text" name="last_name" placeholder="Enter last name">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email" maxlength="80" name="email" type="email" placeholder="your@email.com">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="your@email.com">
                     </div>
                 </div>
                 
@@ -198,57 +198,95 @@
                 <!-- Address Information -->
                 <div class="form-row single">
                     <div class="form-group">
-                        <label for="street">Street</label>
-                        <textarea id="street" name="street" placeholder="Enter street address"></textarea>
+                        <label>Street</label>
+                        <textarea name="street" placeholder="Enter street address"></textarea>
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="city">City</label>
-                        <input id="city" maxlength="40" name="city" type="text" placeholder="Enter city">
+                        <label>City</label>
+                        <input type="text" name="city" placeholder="Enter city">
                     </div>
                     <div class="form-group">
-                        <label for="state">State/Province</label>
-                        <input id="state" maxlength="20" name="state" type="text" placeholder="Enter state">
+                        <label>State/Province</label>
+                        <input type="text" name="state" placeholder="Enter state">
                     </div>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="zip">Zip</label>
-                        <input id="zip" maxlength="20" name="zip" type="text" placeholder="Enter zip code">
+                        <label>Zip</label>
+                        <input type="text" name="zip" placeholder="Enter zip code">
                     </div>
                     <div class="form-group">
-                        <label for="country">Country</label>
-                        <input id="country" maxlength="40" name="country" type="text" placeholder="Enter country">
+                        <label>Country</label>
+                        <input type="text" name="country" placeholder="Enter country">
                     </div>
                 </div>
                 
                 <hr class="section-divider">
                 
-                <!-- Program Information -->
+                <!-- Donation Details -->
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="00NdN00000L0Pgf">Application Date</label>
-                        <input id="00NdN00000L0Pgf" name="00NdN00000L0Pgf" type="text" placeholder="DD/MM/YYYY">
+                        <label>Currency</label>
+                        <select name="currency">
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="KGS">KGS - Kyrgyzstani Som</option>
+                            <option value="KZT">KZT - Kazakhstani Tenge</option>
+                            <option value="TJS">TJS - Tajikistani Somoni</option>
+                            <option value="USD" selected>USD - US Dollar</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="00NdN00000L0PK6">Program Name</label>
-                        <select id="00NdN00000L0PK6" name="00NdN00000L0PK6" title="Program Name">
+                        <label>Donation Amount</label>
+                        <input type="text" name="00NdN00000Kw2PJ" placeholder="Enter amount">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <select name="00NdN00000Kw2Nh">
                             <option value="">--None--</option>
-                            <option value="Disaster and Emergency Response">Disaster and Emergency Response</option>
-                            <option value="Fitness Care">Fitness Care</option>
-                            <option value="Food Distribution">Food Distribution</option>
-                            <option value="Food Systems Development">Food Systems Development</option>
-                            <option value="Health and Wellness (Grantmaking)">Health and Wellness (Grantmaking)</option>
-                            <option value="Nutrition Education">Nutrition Education</option>
-                            <option value="Rural Education &amp; Nutrition Support">Rural Education &amp; Nutrition Support</option>
+                            <option>Unknown</option>
+                            <option>Check</option>
+                            <option>Credit Card</option>
+                            <option>ACH</option>
+                            <option>Cash</option>
+                            <option>In-Kind</option>
+                            <option>Stock</option>
+                            <option>Asset</option>
+                            <option>Cryptocurrency</option>
+                            <option>PayPal</option>
+                            <option>Venmeo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Transaction Date</label>
+                        <input type="date" name="00NdN00000Kw2SX">
+                    </div>
+                </div>
+                
+                <div class="form-row single">
+                    <div class="form-group">
+                        <label>Endowment Category</label>
+                        <select name="00NdN00000Kw2Qv">
+                            <option value="">--None--</option>
+                            <option>Unrestricted fund at UCA</option>
+                            <option>Scholarships at the School of Arts and Sciences</option>
+                            <option>Scholarships at the School of Professional and Continuing Education</option>
+                            <option>Research at the Graduate School of Development</option>
+                            <option>Facilities and Equipment</option>
+                            <option>School of Arts and Sciences Alumni Campaign</option>
+                            <option>School of Professional and Continuing Education Alumni Campaign</option>
+                            <option>School of Arts and Sciences Graduating Class Campaign</option>
                         </select>
                     </div>
                 </div>
                 
-                <button type="submit" class="submit-btn">Submit Enrollment</button>
+                <button type="submit" class="submit-btn">Donate Now</button>
             </form>
         </div>
     </div>
